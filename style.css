@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sm-imgani {
+  animation: mymove 2s infinite;
+}
+
+@keyframes mymove {
+  from {
+    left: 50px;
+  }
+  to {
+    right: 50px;
+  }
+}

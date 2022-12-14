@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bubble Project using Tailwind CSS</title>
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="font-poppins bg-[#f3f6f9]">
+    <section class="max-w-full mx-auto">
+      <!-- main container -->
+      <div class="container mx-auto max-w-full">
+        <!-- Nav bar -->
+        <nav class="h-20 flex justify-between items-center bg-white md:hidden">
+          <!-- Logo & Menu Item -->
+          <div class="flex space-x-10 bg-white self-stretch">
+            <div class="flex self-stretch items-center bg-[#f3f6f9] p-7">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5"
+                />
+              </svg>
+            </div>
+            <div class="flex self-stretch items-center text-gray-400">
+              <ul class="flex space-x-10">
+                <a href="#">All Projects</a>
+                <a href="#">Reviews</a>
+                <a href="#">Join FB Community</a>
+                <a href="#">Need help?</a>
+              </ul>
+            </div>
+          </div>
+          <!-- User Nav -->
+          <!--  User Nav Container -->
+          <div class="flex space-x-10 mr-8 items-center text-gray-400">
+            <!-- Item Box 1 -->
+            <div>
+              <div class="relative top-4">
+                <img src="assets/square.svg" alt="" />
+                <span
+                  class="w-3 h-3 bg-gray-300 absolute top-0 left-4 rounded-full border-white"
+                ></span>
+              </div>
+              <div
+                class="bg-red-900 rounded-full w-6 h-6 relative left-8 -top-10"
+              >
+                <span class="text-white absolute left-2 top-0.5 text-sm"
+                  >2</span
+                >
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div>
+              <span>Hi, David</span>
+            </div>
+            <!-- item 3 -->
+
+            <div class="bg-[#c9f7f5] py-3 px-4 rounded-md">
+              <span class="text-emerald-900">D</span>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="flex space-x-2 w-full h-[120vh] space-y-3 md:flex-wrap">
+          <!-- icon sidebar -->
+          <div
+            class="bg-white shadow-md p-6 flex flex-col space-y-60 items-center lg:-translate-x-full transition-all"
+          >
+            <!-- icon box-1 -->
+            <div class="flex flex-col space-y-8">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-8 h-8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.67 1.09-.086 2.17-.208 3.238-.365 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-8 h-8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"
+                  />
+                </svg>
+              </div>
+            </div>
+            <!-- icon box-2 -->
+            <div class="flex flex-col space-y-8">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-8 h-8"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.804 21.644A6.707 6.707 0 006 21.75a6.721 6.721 0 003.583-1.029c.774.182 1.584.279 2.417.279 5.322 0 9.75-3.97 9.75-9 0-5.03-4.428-9-9.75-9s-9.75 3.97-9.75 9c0 2.409 1.025 4.587 2.674 6.192.232.226.277.428.254.543a3.73 3.73 0 01-.814 1.686.75.75 0 00.44 1.223zM8.25 10.875a1.125 1.125 0 100 2.25 1.125 1.125 0 000-2.25zM10.875 12a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0zm4.875-1.125a1.125 1.125 0 100 2.25 1.125 1.125 0 000-2.25z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-8 h-8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <!-- Item box container -->
+          <div
+            class="w-20 flex flex-col space-y-5 items-center md:translate-x-[-20rem] transition-all"
+          >
+            <!-- Icon Box 1 -->
+            <div
+              class="bg-white shadow-md rounded-lg flex flex-col items-center w-20 h-20 p-4 text-[#3699ff]"
+            >
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-8 h-8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10"
+                  />
+                </svg>
+              </span>
+              <span class="font-bold">Design</span>
+            </div>
+
+            <!-- Icon Box 2 -->
+            <div
+              class="bg-white shadow-md rounded-lg flex flex-col items-center w-20 h-20 p-4 text-gray-400"
+            >
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-8 h-8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10"
+                  />
+                </svg>
+              </span>
+              <span>Channel</span>
+            </div>
+
+            <!-- Icon Box 3 -->
+            <div
+              class="bg-white shadow-md rounded-lg flex flex-col items-center w-20 h-20 p-4 text-gray-400"
+            >
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-8 h-8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10"
+                  />
+                </svg>
+              </span>
+              <span>Share</span>
+            </div>
+
+            <!-- Icon Box 4 -->
+            <div
+              class="bg-white shadow-md rounded-lg flex flex-col items-center w-20 h-20 p-4 text-gray-400"
+            >
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-8 h-8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10"
+                  />
+                </svg>
+              </span>
+              <span>Demo</span>
+            </div>
+
+            <!-- Icon Box 5 -->
+            <div
+              class="bg-white shadow-md rounded-lg flex flex-col items-center w-20 h-20 p-4 text-gray-400"
+            >
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-8 h-8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10"
+                  />
+                </svg>
+              </span>
+              <span>Analytics</span>
+            </div>
+          </div>
+
+          <!-- Design & Preview Container -->
+          <div class="flex w-10/12 space-x-2 2xl:flex-wrap">
+            <!-- Design Section -->
+            <div
+              class="w-1/2 bg-white shadow-md rounded-sm pl-8 p-4 2xl:w-full md:mt-[-32rem] md:w-full"
+            >
+              <h1 class="text-2xl font-extrabold">Design</h1>
+
+              <div class="mt-8">
+                <!-- color box-->
+
+                <div class="flex w-3/4 space-x-5 md:flex md:space-x-0">
+                  <div class="w-1/2 flex flex-col space-y-2">
+                    <span class="text-gray-800">Icon color</span>
+                    <div class="w-11/12 h-10 rounded-xl bg-[#20124d]"></div>
+                    <span class="text-gray-400"
+                      >Sets color of all the icons.</span
+                    >
+                  </div>
+                  <div class="w-1/2 flex flex-col space-y-2">
+                    <span>Border color</span>
+                    <div class="w-11/12 h-10 rounded-xl bg-[#ff0000]"></div>
+                    <span class="text-gray-400"
+                      >Sets the border color of the bubble buttons.</span
+                    >
+                  </div>
+                </div>
+
+                <!-- Bubble box -->
+                <h2 class="mt-8 text-lg font-bold">Bubble</h2>
+                <div class="flex w-3/4 space-x-5 mt-4 md:flex md:space-x-0">
+                  <div class="w-1/2 flex flex-col space-y-2">
+                    <span class="text-gray-800">Triggers</span>
+                    <div class="w-11/12 h-10 rounded-md bg-[#f3f6f9]"></div>
+                    <span class="text-gray-400"
+                      >Sets when to open the bubble.</span
+                    >
+                  </div>
+                  <div class="w-1/2 flex flex-col space-y-2">
+                    <span class="text-gray-800">Alignment</span>
+                    <div class="w-11/12 h-10 rounded-md bg-[#f3f6f9]"></div>
+                  </div>
+                </div>
+
+                <!-- Display -->
+
+                <div class="flex w-3/4 space-x-5 mt-8 md:flex md:space-x-0">
+                  <div class="w-1/2 flex flex-col space-y-2">
+                    <span class="text-gray-800">Display type</span>
+                    <div class="w-11/12 h-10 rounded-md bg-[#f3f6f9]"></div>
+                    <span class="text-gray-400"
+                      >Sets the call to action image display.</span
+                    >
+                  </div>
+                  <div class="w-1/2 flex flex-col space-y-2">
+                    <span class="text-gray-800">Size</span>
+                    <div class="w-11/12 h-10 rounded-md bg-[#f3f6f9]"></div>
+                  </div>
+                </div>
+
+                <!-- CTA -->
+
+                <h2 class="mt-12 text-lg font-bold">Call to action</h2>
+                <div class="flex w-3/4 space-x-5 mt-4 md:flex md:space-x-0">
+                  <div class="w-1/2 flex flex-col space-y-2">
+                    <span class="text-gray-800">Text</span>
+                    <div class="w-11/12 h-10 rounded-md bg-[#f3f6f9]"></div>
+                  </div>
+                  <div class="w-1/2 flex flex-col space-y-2">
+                    <span class="text-gray-800">Hide CTA text</span>
+                    <div class="w-11/12 h-10 rounded-md bg-[#f3f6f9]"></div>
+                  </div>
+                </div>
+
+                <!-- Extras -->
+
+                <h2 class="mt-12 text-lg font-bold">Extras</h2>
+                <div
+                  class="flex w-3/4 space-x-5 mt-4 md:flex md:space-x-0 md:space-y-3"
+                >
+                  <div class="w-1/2">
+                    <div
+                      class="w-11/12 h-10 rounded-md bg-[#f3f6f9] text-gray-800 pl-4 pt-4 pb-12"
+                    >
+                      Branding
+                    </div>
+                  </div>
+                  <div class="w-1/2">
+                    <div
+                      class="w-11/12 h-10 rounded-md bg-[#f3f6f9] text-gray-800 pl-4 pt-4 pb-12"
+                    >
+                      Popup Button Border
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Preview Section -->
+
+            <div class="w-1/2 h-full flex flex-col space-y-3 2xl:w-full">
+              <div
+                class="bg-white shadow-md flex space-x-6 p-4 rounded-xl 2xl:mt-4"
+              >
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z"
+                    />
+                    <path
+                      d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <ul class="flex space-x-10 text-gray-400">
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">test project</a></li>
+                    <li><a href="#">content Co-Pilot</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Preview Image -->
+              <div class="bg-white shadow-md h-full rounded-lg">
+                <div
+                  class="flex flex-col justify-center items-center w-1/2 mx-auto relative"
+                >
+                  <div class="text-2xl font-extrabold mt-6">Preview</div>
+                  <div class="h-[40rem] mt-12 overflow-hidden rounded-lg">
+                    <img
+                      src="assets/bg.jpg"
+                      alt=""
+                      class="h-full w-full object-cover"
+                    />
+                    <div class="absolute top-28 w-full">
+                      <!-- Circle -->
+                      <div class="flex justify-between">
+                        <div class="flex space-x-1 ml-4">
+                          <div class="w-8 h-8 rounded-full bg-[#d3d9db]"></div>
+                          <div class="w-8 h-8 rounded-full bg-[#d3d9db]"></div>
+                          <div class="w-8 h-8 rounded-full bg-[#d3d9db]"></div>
+                        </div>
+
+                        <div
+                          class="w-8 h-8 rounded-full bg-[#0c1b1c] bg-opacity-80 mr-4"
+                        ></div>
+                      </div>
+                      <div>
+                        <div class="mt-[22rem]">
+                          <p class="text-white text-center">Connect with</p>
+                        </div>
+
+                        <div class="w-11/12 mx-auto mt-4">
+                          <div class="flex flex-col space-y-3 text-center">
+                            <div class="flex space-x-3">
+                              <div
+                                class="bg-[#d3d9db] bg-opacity-70 w-1/2 p-5 rounded-lg text-[#20124d] font-medium"
+                              >
+                                CLICK HERE!
+                              </div>
+                              <div
+                                class="bg-[#d3d9db] bg-opacity-70 w-1/2 p-5 rounded-lg text-[#20124d] font-medium"
+                              >
+                                SMS
+                              </div>
+                            </div>
+                            <div
+                              class="bg-[#d3d9db] bg-opacity-70 p-5 rounded-lg text-[#20124d] font-medium"
+                            >
+                              EMAIL
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="-mt-8">
+                        <p
+                          class="text-white text-center mt-12 rounded-bl-lg rounded-br-lg bg-black p-3 bg-opacity-30"
+                        >
+                          Powered by Lead Bubble
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="w-full font-extrabold text-white text-lg text-center bg-[#3699ff] mt-4 p-4 rounded-md"
+                  >
+                    Save Changes
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- LOADER -->
+      <div
+        class="sm-img fixed bottom-3 right-32 h-36 w-40 cursor-pointer bg-video border-4 border-blue-600 rounded-2xl overflow-hidden"
+      >
+        <video
+          src="video/gif.mp4"
+          autoplay
+          loop
+          class="w-full h-full object-cover"
+        ></video>
+
+        <div class="flex flex-col justify-center items-center">
+          <button
+            class="close fixed bottom-[7.5rem] right-[8.5rem] text-2xl font-medium bg-white bg-opacity-70 text-black w-7 h-7 rounded-full"
+          >
+            &times;
+          </button>
+          <h3 class="fixed bottom-14 text-white text-center font-semibold">
+            This is your Call <br />
+            <span class="font-semibold text-center">To Action!</span>
+          </h3>
+        </div>
+      </div>
+
+      <!-- LARGE IMAGE -->
+      <div
+        class="hidden lg-img fixed w-72 h-[30rem] left-[86rem] bottom-40 bg-white shadow-xl rounded-lg"
+      >
+        <div
+          class="bg-white shadow-xl rounded-lg overflow-hidden absolute w-full h-[95%]"
+        >
+          <video loop id="myVideo" class="w-full h-full object-cover">
+            <source src="video/gif.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <!-- icon-container -->
+
+        <div
+          class="absolute w-full flex items-center justify-between text-white p-3"
+        >
+          <div class="">
+            <button
+              class="play bg-white bg-opacity-80 w-10 h-10 rounded-full text-black"
+            >
+              <i class="fas fa-play icon"></i>
+            </button>
+            <button
+              class="previous bg-white bg-opacity-80 w-10 h-10 rounded-full text-black"
+            >
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button
+              class="sound bg-white bg-opacity-80 w-10 h-10 rounded-full text-black"
+            >
+              <i class="soundOn fas fa-volume-up"></i>
+              <!-- <i class="mute fas fa-volume-mute"></i> -->
+            </button>
+          </div>
+
+          <div>
+            <button
+              class="lg-close font-medium bg-white bg-opacity-70 w-10 h-10 rounded-full text-black text-2xl"
+            >
+              &times;
+            </button>
+          </div>
+        </div>
+
+        <!-- -----Connect with SMS and LeadBubble----- -->
+        <div
+          class="absolute top-[21.5rem] w-full flex justify-center items-center space-y-1 flex-col text-white p-3"
+        >
+          <p class="">Connect with</p>
+          <div class="flex space-x-2 w-full text-center">
+            <div class="bg-[#546782] bg-opacity-60 w-1/2 py-2 rounded-md">
+              <div><i class="fas fa-comment"></i></div>
+              <span>SMS</span>
+            </div>
+            <div class="bg-[#546782] bg-opacity-60 w-1/2 py-2 rounded-md">
+              <div><i class="fas fa-comment-dots"></i></div>
+              <span>Connect</span>
+            </div>
+          </div>
+        </div>
+        <p class="absolute bottom-0 left-11 font-semiboldtext-gray-400">
+          Powered by Lead Bubble
+        </p>
+      </div>
+    </section>
+
+    <!-- it shows on image click -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
